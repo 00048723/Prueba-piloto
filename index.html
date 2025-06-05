@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat de Locales</title>
+
+  <!-- Carga el script principal -->
+  <script type="module" src="main.js"></script>
+
+  <!-- Estilos muy básicos para que se vea decente -->
+  <style>
+    body  { font-family:sans-serif; margin:0 auto; max-width:720px; padding:2rem }
+    #chat { border:1px solid #ccc; height:400px; overflow:auto; padding:1rem }
+    #form { display:flex; margin-top:1rem }
+    #q    { flex:1; padding:.5rem }
+  </style>
+</head>
+
+<body>
+  <h1>Chat de Locales Comerciales</h1>
+
+  <!-- Zona donde se imprimen los mensajes -->
+  <div id="chat"></div>
+
+  <!-- Formulario de entrada -->
+  <form id="form">
+    <input id="q" placeholder="Escribe tu pregunta…" autocomplete="off" />
+    <button>Enviar</button>
+  </form>
+</body>
+</html>
+
